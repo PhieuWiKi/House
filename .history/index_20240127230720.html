@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene
+      environment="preset: forest;dressing:none;ground: flat;  dreessingAmount: 0;fog :0; groundColor: #004d00; groundTexture: none; horizonColor: #96a98a; skyColor: #b0d8ff; lightPosition: 1 50 -2; ; fogColor: #b0d8ff; shadow: true; dressingColor: #004d00"
+    >
+     
+
+  
+
+
+
+      <!--Floor-->
+      <a-entity
+        static-body=""
+        geometry="depth: 80; width: 80"
+        position="-3.75592 0.29754 0.26125"
+        material="shader: flat; side: double; src: image/floor.jpg; repeat: 10 10"
+      ></a-entity>
+
+    
+      <a-entity gltf-model="asset/villa_lisse_7_-_no_furniture_and_curtains.glb" position="3.14569 0.6198 3.26647" scale="3 3 3" rotation="0 90 0"></a-entity>
+     
+
+      <!--Decor-->
+      <a-video static-body="" geometry="height: 2.7; width: 5" position="1.68341 5.81259 -3.36164" material="src: image/videoplayback.mp4; repeat: 1.01 1" rotation=""></a-video>
+      <a-entity static-body="" geometry="depth: 1.7; width: 5" position="1.70578 2.66364 -2.90579" material="shader: flat; side: double; src: image/floor.jpg" rotation="90 0 0"></a-entity>
+     
+      <a-entity gltf-model="asset/dining_table_set.glb" position="1.25905 10.26566 6.30841" scale="0.01 0.01 0.01" rotation="0 90 0"></a-entity>      <a-entity gltf-model="asset/sofa_-_classic_furniture_set..glb" position="-0.32195 1.82249 9.70962" scale="0.03 0.03 0.03" rotation="0 -180 0"></a-entity>
+     
+      <a-entity gltf-model="asset/kitchen_counter_cabinets_dishwasher_and_sink.glb" position="15.47098 10.09889 16.11192" scale="3 3 3" rotation="0 -180 0"></a-entity>
+
+      <a-entity gltf-model="asset/house_props__fridge.glb" position="-6.30682 11.14688 13.5219" scale="3.22 2.69 3.56" rotation=""></a-entity>
+      <!--Fish tank-->
+      <a-entity static-body="" geometry="depth: 2.5; height: 2; width: 4.5" position="14.571 5.21697 -14.77534" material="shader: flat; side: double; src: image/fish.mp4" rotation="90 90 0"></a-entity>
+      <a-entity static-body="" geometry="depth: 2; height: 2; width: 4.5" position="14.57084 2.96745 -14.77718" material="shader: flat; side: double; src: image/floor.jpg" rotation="90 90 0"></a-entity>
+      <a-entity static-body="" geometry="height: 2; width: 4.5" position="14.57084 7.00305 -14.77718" material="shader: flat; side: double; src: image/floor.jpg" rotation="90 90 0"></a-entity>
+
+      <a-entity gltf-model="asset/medium_wardrobe.glb" position="5.39585 11.147 -20.76342" scale="3.1 2.14 3.37" rotation=""></a-entity>
+      <a-entity gltf-model="asset/bed_cream-colored_low_poly.glb" position="13.18745 10.24068 -22.85993" scale="3.1 2.14 3.37" rotation="0 -90 0"></a-entity>
+      <a-entity gltf-model="asset/free_desk_or_gamer_chair.glb" position="12.4795 10.20923 -32.81226" scale="3.1 2.14 3.37" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="asset/low_poly_gaming_desk.glb" position="14.61987 11.69697 -31.50197" scale="3.1 2.14 3.37" rotation="0 -90 0"></a-entity>
+
+      <a-entity gltf-model="asset/dirty_car.glb" position="-30.32741 0.77762 -21.55943" scale="0.03 0.03 0.03" rotation=""></a-entity>
+      <a-entity gltf-model="asset/speaker.glb" position="1.27619 3.92816 -3.63927" scale="0.4 0.63 0.5" rotation="90 -90 0"></a-entity>
+
+      <!--Plant-->
+      <a-entity gltf-model="asset/potted_plant_mediterranean_med_leaf_low_poly.glb" position="-11.40078 1.75897 -1.96987" scale="4 4 4" rotation="0 -90 0"></a-entity>
+      <a-entity gltf-model="asset/potted_plant_mediterranean_med_leaf_low_poly.glb" position="6.865 10.3979 -2.084" scale="4 4 4" rotation="0 -90 0"></a-entity>
+      <a-entity gltf-model="asset/potted_plant_mediterranean_med_leaf_low_poly.glb" position="6.86473 10.17013 -2.08353" scale="4 4 4" rotation="0 -90 0"></a-entity>
+
+      <!--Dog-->
+
+      <a-entity id="" gltf-model="asset/triceratops.glb" position="26.14197 0.88552 32.89366" rotation="0 90 0" scale="3 3 3" animation="property: rotation; dur: 1500; from: 0 0 0; to: 0 360 0; easing: linear; loop: true"></a-entity>
+
+     <!--Onlyfans-->
+    
+     <a-entity id="CeilingFan-2" gltf-model="asset/ceiling_fan.glb" position="1.89198 17.43788 7.55797" rotation="0 15.98399999856949 0" scale="0.5 0.42 0.5" animation="property: rotation; dur: 1500; from: 0 0 0; to: 0 360 0; easing: linear; loop: true"></a-entity>
+     <a-entity id="CeilingFan" gltf-model="asset/ceiling_fan.glb" position="1.156 8.35075 7.55797" rotation="0 90 0" scale="0.5 0.42 0.5" animation="property: rotation; dur: 1500; from: 0 0 0; to: 0 360 0; easing: linear; loop: true"></a-entity>
+     
+     <!--Magic door-->
+     <a-box id="in" src="image/door.jpg" geometry="width: 3.5; height: 0.3; depth: 5" position="-0.87429 13.64146 -32.0994" class="intersectable" material="" rotation="-90 -90 0"></a-box>
+     <a-box id="out" src="image/door.jpg" geometry="width: 3.5; height: 0.3; depth: 5" position="-0.65142 13.64146 -32.04673" class="intersectable" material="" rotation="-90 90 0"></a-box>
+
+     
+     <script>
+      var cam = document.querySelector('#cam');
+      var ch1 = document.querySelector('#in');
+      var ch2 = document.querySelector('#out');
+
+      ch1.addEventListener('click', function () {
+        cam.setAttribute('position' , {x: 1.22039, y: 13.25233, z: -31.5716});
+        cam.setAttribute('rotation' , {x: 0, y: -90, z: 0});
+ });
+ ch2.addEventListener('click', function () {
+     cam.setAttribute('position' ,  {x: -2.79723, y:  13.25233, z:-31.5716});
+     cam.setAttribute('rotation' , {x: 0, y: -90, z: 0});
+ });
+ </script>
+  
+
+   
+
+      <!--Thang may-->
+      <a-camera id="cam" position="1.62699 5.12256 6.528" camera="" rotation="0 -90 0" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">  <a-cursor material="" raycaster="" cursor="" geometry=""></a-cursor> </a-camera>
+      <a-box id="up" src="image/door.jpg" geometry="width: 3.72; height: 0.3; depth: 8.35" position="-6.6973 5.93784 -18.01463" class="intersectable" material="" rotation="-90 0 0"></a-box>
+      <a-box id="down" src="image/floor.jpg" geometry="width: 0.17" position="-5.5 13.9963 -22.65177" class="intersectable" material="" rotation="0 -90 0" scale="0.757 0.757 0.503"></a-box>
+
+      <a-entity static-body="" geometry="depth: 1.7; width: 5" position="1.70578 2.66364 -2.90579" material="shader: flat; side: double; src: image/floor.jpg" rotation="90 0 0"></a-entity>
+      
+    <script>
+          var cam = document.querySelector('#cam');
+          var ch1 = document.querySelector('#up');
+          var ch2 = document.querySelector('#down');
+
+          ch1.addEventListener('click', function () {
+            cam.setAttribute('position' , {x: -6.27876, y: 13.71848, z: -19.30416});
+            cam.setAttribute('rotation' , {x: 0, y: -90, z: 0});
+     });
+     ch2.addEventListener('click', function () {
+         cam.setAttribute('position' , {x: -6.27876, y: 6, z: -11.58709});
+         cam.setAttribute('rotation' , {x: 0, y: -90, z: 0});
+     });
+     </script>
+
+
+  <!--  <a-box id="myBox" position="3.709 3.8106 3.43787" src="image/floor.jpg" 
+ animation__move="property: position; to: 3.709 3.8106 3.43787; easing: easeInOutQuad; dur: 3000" 
+ move-box="" material="" geometry="" scale="0.278 7.41047 2.74729"></a-box>-->
+
+
+    </a-scene>
+  </body>
+</html>
